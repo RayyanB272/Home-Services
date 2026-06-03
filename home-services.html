@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Services - Expert Home Repairs & Improvement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header sticky-top">
+        <div class="container-max d-flex align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <a href="#" class="logo d-flex align-items-center text-decoration-none">
+                <img src="assets/images/nav-logo.png" alt="HomePro" class="header-logo-img">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav d-none d-lg-flex align-items-center">
+                <a href="#about" class="nav-link-custom">About Us</a>
+                <a href="#services" class="nav-link-custom">Services</a>
+                <a href="#how-it-works" class="nav-link-custom">Our Blog</a>
+                <a href="#contact" class="nav-link-custom">Contact</a>
+            </nav>
+
+            <!-- Right Actions: Status Indicator & Mobile Trigger -->
+            <div class="header-right-actions d-flex align-items-center">
+                <div class="service-status-tag d-none d-lg-flex align-items-center">
+                    <span class="status-alert-dot"></span>
+                    <span class="status-text">24 Hour Services</span>
+                </div>
+                <label for="mobile-menu-toggle" class="mobile-menu-btn d-lg-none mb-0">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+
+            <input type="checkbox" id="mobile-menu-toggle" class="d-none">
+
+            <!-- Mobile Side Drawer -->
+            <div class="mobile-nav-dropdown d-lg-none">
+                <div class="mobile-drawer-header d-flex align-items-center justify-content-between">
+                    <a href="#" class="logo d-flex align-items-center text-decoration-none">
+                        <img src="assets/images/nav-logo.png" alt="HomePro" class="header-logo-img">
+                    </a>
+                    <label for="mobile-menu-toggle" class="mobile-menu-close-btn mb-0">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </div>
+                <div class="mobile-drawer-links d-flex flex-column align-items-center justify-content-center flex-grow-1">
+                    <a href="#about" class="mobile-drawer-link">About Us</a>
+                    <a href="#services" class="mobile-drawer-link">Services</a>
+                    <a href="#how-it-works" class="mobile-drawer-link">Our Blog</a>
+                    <a href="#contact" class="mobile-drawer-link">Contact</a>
+                </div>
+                <div class="mobile-drawer-footer d-flex align-items-center justify-content-center">
+                    <span class="status-alert-dot me-2"></span>
+                    <span class="text-white fw-bold text-nowrap">24 Hour Services</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row align-items-stretch g-4">
+
+                <!-- Left Side Image -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="hero-side-img-box">
+                        <img src="assets/images/hero-worker-repairing.png" alt="Home service technician inspecting equipment">
+                    </div>
+                </div>
+
+                <!-- Center Content -->
+                <div class="col-lg-6 col-12 text-center text-white d-flex flex-column justify-content-center align-items-center position-relative z-2">
+                    <p class="hero-top-subtitle text-uppercase mb-3">Maintenances &nbsp;&bull;&nbsp; Repairs &nbsp;&bull;&nbsp; Improvements</p>
+
+                    <h1 class="hero-main-heading mb-3">Need improvement <br>or repair your home? <br>we can help!</h1>
+
+                    <!-- Badges -->
+                    <div class="hero-badges-container d-flex gap-4 mb-4 justify-content-center">
+                        <span class="hero-badge-bullet"><i class="fa-solid fa-check me-2"></i>Free Quotes</span>
+                        <span class="hero-badge-bullet"><i class="fa-solid fa-check me-2"></i>100% Commitment-Free</span>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <a href="#contact" class="hero-btn-pill-action text-decoration-none mb-5">
+                        <span>Call Us Now</span>
+                        <div class="hero-phone-circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+
+                    <!-- Specs Bar -->
+                    <div class="hero-bottom-specs-row w-100">
+                        <div class="row g-3 align-items-center justify-content-center">
+                            <div class="col-6 col-sm-3 hero-spec-col">
+                                <div class="hero-spec-card">
+                                    <div class="hero-spec-icon-box"><i class="fa-solid fa-shield"></i></div>
+                                    <div class="hero-spec-text">Satisfaction<br>Guarantee</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 hero-spec-col">
+                                <div class="hero-spec-card">
+                                    <div class="hero-spec-icon-box"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="hero-spec-text">24H<br>Availability</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 hero-spec-col">
+                                <div class="hero-spec-card">
+                                    <div class="hero-spec-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="hero-spec-text">Local US<br>Professional</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 hero-spec-col">
+                                <div class="hero-spec-card">
+                                    <div class="hero-spec-icon-box"><i class="fa-solid fa-calendar-days"></i></div>
+                                    <div class="hero-spec-text">Flexible<br>Appointments</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Image -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="hero-side-img-box">
+                        <img src="assets/images/hero-worker-plumbing.png" alt="Friendly repair expert with toolkit">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding bg-white">
+        <div class="container-max">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+
+                    <h2 class="fw-bold mb-3" style="color: black; font-size: 2.5rem; line-height: 1.2; letter-spacing: -0.5px;">
+                        Professional for your home services
+                    </h2>
+
+                    <p class="mb-4" style="color: var(--muted); font-size: 1rem; line-height: 1.6;">
+                        You need help for home care? We are home care professionals focused in the US region. We provide several services that support home services
+                    </p>
+
+                    <!-- Feature List -->
+                    <div class="row g-3 mb-5">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+                                <li class="d-flex align-items-center gap-2 fw-bold" style="color: var(--primary); font-size: 1rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Repair and Installation
+                                </li>
+                                <li class="d-flex align-items-center gap-2 fw-bold" style="color: var(--primary); font-size: 1rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Maintenance
+                                </li>
+                                <li class="d-flex align-items-center gap-2 fw-bold" style="color: var(--primary); font-size: 1rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Home Security Services
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled d-flex flex-column gap-3 m-0">
+                                <li class="d-flex align-items-center gap-2 fw-bold" style="color: var(--primary); font-size: 1rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Plumbing
+                                </li>
+                                <li class="d-flex align-items-center gap-2 fw-bold" style="color: var(--primary); font-size: 1rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Budget-friendly
+                                </li>
+                                <li class="d-flex align-items-center gap-2 fw-bold" style="color: var(--primary); font-size: 1rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Eco-friendly solutions
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Info Banner -->
+                    <div class="p-4 text-white custom-info-banner" style="background-color: var(--secondary); border-radius: 24px; max-width: 490px;">
+                        <p class="m-0 mb-1" style="font-size: 0.95rem; font-weight: 500; opacity: 0.9;">
+                            We already 24 hours fast services to help you.
+                        </p>
+                        <p class="m-0" style="font-size: 1rem; font-weight: 500; opacity: 0.9;">
+                            You can contact us at <a href="tel:8886175894" class="text-white fw-bold text-decoration-underline" style="letter-spacing: 0.3px;">(888) 617-5894</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="shape-house shadow-md position-relative multi-image-container">
+                        <div class="house-clip-wrapper">
+                            <img src="assets/images/team-on-site-back.png" alt="Background working environment"
+                                class="img-layer-back">
+                        </div>
+                        <img src="assets/images/team-on-site-front.png" alt="Home service technician close-up"
+                            class="img-layer-front shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section section-padding">
+        <div class="container-max">
+            <div class="services-header">
+                <h2 class="services-main-title">Our Services</h2>
+                <p class="services-main-subtitle">
+                    You have problems with leaking pipes, broken tiles, lost keys<br> or want to tidy up the trees
+                    around you, of course you need our help!
+                </p>
+            </div>
+
+            <div class="grid-services-layout">
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3>Plumbing services</h3>
+                    <p>Drain pipe leaking, pipe clogged, replace the pipe line</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                    <h3>Roofing repair</h3>
+                    <p>Roof leaks, tile replacement, roof cleaning and maintenance</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <line x1="3" y1="9" x2="21" y2="9" />
+                            <line x1="3" y1="15" x2="21" y2="15" />
+                            <line x1="9" y1="9" x2="9" y2="21" />
+                            <line x1="15" y1="3" x2="15" y2="15" />
+                        </svg>
+                    </div>
+                    <h3>Mold Removal</h3>
+                    <p>Removing and cleaning mildew, Restoration and Prevention</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 22a7 7 0 0 0 7-7c0-2.96-1.81-5.5-4.44-6.59A7.03 7.03 0 0 0 12 2a7 7 0 0 0-2.56 6.41A7.04 7.04 0 0 0 5 15a7 7 0 0 0 7 7z" />
+                        </svg>
+                    </div>
+                    <h3>Tree Trimming</h3>
+                    <p>Trimming and cleaning, Deadwood removal, Tree shaping</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3>Appliance Repair</h3>
+                    <p>repair of washing machines, refrigerators, Air conditioner, etc</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M2 12h20M2 12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4M2 12V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5M4 16v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3M16 16v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3" />
+                        </svg>
+                    </div>
+                    <h3>Bathroom Remodeling</h3>
+                    <p>Design and Consulting, installation, Repairing, tile repair</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <h3>Locksmith</h3>
+                    <p>Lock Installation and Repair, Duplication, Lock Rekeying</p>
+                </div>
+
+                <div class="service-card highlight-card">
+                    <h3>More service?</h3>
+                    <p>You can tell us what you need and we can help!</p>
+                    <a href="#" class="btn-custom">Call Us Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-dark-section section-padding">
+        <div class="container-max">
+            <div class="benefits-outer-card">
+
+                <div class="benefits-header-row">
+                    <h2 class="benefits-main-title">Fast, Friendly, and Satisfaction Guarantee</h2>
+                    <p class="benefits-main-desc">
+                        No matter how big or small your work is, whether it's for the interior or exterior of your home,
+                        we are ready to serve and help you solve your home problems.
+                    </p>
+                </div>
+
+                <div class="benefits-card-divider"></div>
+
+                <div class="benefits-features-grid">
+
+                    <div class="benefit-feature-item">
+                        <div class="benefit-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg>
+                        </div>
+                        <div class="benefit-text-box">
+                            <h4>Satisfaction Guarantee</h4>
+                            <p>you don't need to worry about scams or our performance results. our company has been
+                                verified and strives for optimal results</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-feature-item">
+                        <div class="benefit-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <div class="benefit-text-box">
+                            <h4>Free Quotes</h4>
+                            <p>Get personalized cost estimates without any obligation. Experience transparency and peace
+                                of mind as you explore our service.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-feature-item">
+                        <div class="benefit-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="benefit-text-box">
+                            <h4>Local Professionals</h4>
+                            <p>Our services cover the Nationwide, US area, including urban, suburban, and rural
+                                locations for both long and short term maintenance</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-feature-item">
+                        <div class="benefit-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div class="benefit-text-box">
+                            <h4>Fast 24-Hour Service</h4>
+                            <p>need fast handling for repairs to drains, leaks or something else? Our experts are
+                                available anytime to help you solve the problem</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-feature-item">
+                        <div class="benefit-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                        </div>
+                        <div class="benefit-text-box">
+                            <h4>Flexible Appointments</h4>
+                            <p>We offer convenient appointment times that can accommodate your busy schedule, day or
+                                night, 7 days a week.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-feature-item">
+                        <div class="benefit-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <div class="benefit-text-box">
+                            <h4>100% Commitment-Free</h4>
+                            <p>You are free to ask us about the problems you are facing. We offer a no-commitment
+                                approach to put your mind at ease</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section-padding bg-white">
+        <div class="container-max">
+            <div class="row align-items-center g-5">
+
+                <!-- Left: Process Image -->
+                <div class="col-lg-6 col-12">
+                    <div class="process-image-container">
+                        <div class="process-canvas-wrapper">
+                            <img src="assets/images/howItWork.png" alt="HomePro Professional Expert" class="process-asymmetric-canvas">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Timeline Steps -->
+                <div class="col-lg-6 col-12">
+                    <h2 class="process-main-title">
+                        How HomePro<br>works?
+                    </h2>
+
+                    <div class="process-timeline">
+
+                        <!-- Step 1 -->
+                        <div class="process-step">
+                            <div class="step-meta-box">
+                                <div class="step-number">1.</div>
+                                <h4 class="step-title">Call us<br>anytime 24/7</h4>
+                            </div>
+                            <div class="step-content-box">
+                                <p class="step-desc">
+                                    You can contact us directly, we will quickly put you in touch with our home care professionals who are ready anytime
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="process-step">
+                            <div class="step-meta-box">
+                                <div class="step-number">2.</div>
+                                <h4 class="step-title">Schedule<br>Service</h4>
+                            </div>
+                            <div class="step-content-box">
+                                <p class="step-desc">
+                                    After connecting your call, our home care experts will answer your questions and provide flexible appointment times
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="process-step">
+                            <div class="step-meta-box">
+                                <div class="step-number">3.</div>
+                                <h4 class="step-title">Your request<br>is complated</h4>
+                            </div>
+                            <div class="step-content-box">
+                                <p class="step-desc">
+                                    Once your technician arrives, he will diagnose the problem and provide an estimate. If you decide to continue, the technician will get to work
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-slider-section">
+        <div class="slider-container">
+
+            <h2 class="slider-title">Here our original reviews<br>from trusted platform</h2>
+
+            <div class="trustpilot-logo">
+                <i class="fa-solid fa-star-of-life"></i> Trustpilot
+            </div>
+
+            <div class="slider-window">
+
+                <button class="nav-arrow left-arrow" aria-label="Previous review">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <div class="testimonial-card-content">
+                    <p class="review-text">
+                        Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my
+                        leaky roof into a stockade. With their craftsmanship and the best materials, my house is now
+                        ready to weather any storm.
+                    </p>
+                    <div class="user-meta-block">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                            alt="Kende Attila" class="user-avatar">
+                        <div class="user-details">
+                            <h4 class="user-name">Kende Attila</h4>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star matched"></i>
+                                <i class="fa-solid fa-star matched"></i>
+                                <i class="fa-solid fa-star matched"></i>
+                                <i class="fa-solid fa-star matched"></i>
+                                <i class="fa-solid fa-star empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-arrow right-arrow" aria-label="Next review">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="slider-pagination-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="blog" class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-5">
+                <h2 class="section-title mt-2">Explore Insights in Our Blog</h2>
+                <p>Find lots of insights and information on our blog. Explore,<br> learn, and get inspired today</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="blog-card bg-white rounded-4 overflow-hidden h-100 shadow-sm border-0">
+                        <div class="ratio-video overflow-hidden">
+                            <img src="assets/images/blog-thumbnail-01.png"
+                                alt="Frozen pipe insulation maintenance setup">
+                        </div>
+                        <div class="p-4">
+                            <span>19 Jan 2023</span>
+                            <h4>Understanding Smart Home Systems & Maintenance</h4>
+                            <p>Discover the ultimate guide to troubleshooting common smart home issues in our latest
+                                blog post. From connectivity problems to device malfunctions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card bg-white rounded-4 overflow-hidden h-100 shadow-sm border-0">
+                        <div class="ratio-video overflow-hidden">
+                            <img src="assets/images/blog-thumbnail-02.png"
+                                alt="Technician calibrating a residential AC unit">
+                        </div>
+                        <div class="p-4">
+                            <span>19 Jan 2023</span>
+                            <h4>The Ultimate Guide to Home Repairs and Renovations</h4>
+                            <p>Discover the ultimate guide to troubleshooting common smart home issues in our latest
+                                blog post. From connectivity problems to device malfunctions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card bg-white rounded-4 overflow-hidden h-100 shadow-sm border-0">
+                        <div class="ratio-video overflow-hidden">
+                            <img src="assets/images/blog-thumbnail-03.png" alt="Modern bathroom under reconstruction">
+                        </div>
+                        <div class="p-4">
+                            <span>19 Jan 2023</span>
+                            <h4>Painting Techniques for a Kitchen Refresh</h4>
+                            <p>Discover the ultimate guide to troubleshooting common smart home issues in our latest
+                                blog post. From connectivity problems to device malfunctions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container faq-wrapper">
+
+            <!-- Left: Title and CTA -->
+            <div class="faq-intro">
+                <h2 class="faq-title">Frequently Asked<br>Questions</h2>
+                <p class="faq-subtitle">Still need help? <a href="#" class="get-help-link">Get Help Now</a></p>
+            </div>
+
+            <!-- Right: Accordion -->
+            <div class="faq-accordion-container">
+
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>What is HomePro?</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <p class="faq-answer">
+                        HomePro is a home care platform that connects homeowners with professional service providers
+                        offering a wide range of home services, including repairs, maintenance, cleaning, and more.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are the service providers on HomePro reliable and qualified?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What if I have an issue or complaint about a service provider?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How are payments handled on HomePro?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I leave a review for a service provider?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / CTA SECTION -->
+    <section id="contact" class="cta-custom-section position-relative overflow-hidden">
+        <div class="container-max">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 text-white position-relative z-2">
+                    <h2 class="cta-title mb-4">Already to improve <br>or repair your home? <br>Let's Talk!</h2>
+                    <div class="cta-badges d-flex gap-4 mb-4">
+                        <span class="cta-badge-item"><i class="fa-solid fa-check me-1"></i> Free Quotes</span>
+                        <span class="cta-badge-item"><i class="fa-solid fa-check me-1"></i> 100% Commitment-Free</span>
+                    </div>
+                    <a href="tel:(888)617-5894" class="cta-btn-pill text-decoration-none">
+                        <span>Call Us Now</span>
+                        <div class="phone-icon-circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-5 position-relative d-none d-lg-block">
+                    <div class="cta-image-wrapper">
+                        <img src="assets/images/banner.png" alt="HomePro application dashboard showcase"
+                            class="img-fluid cta-graphic-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & NEWSLETTER -->
+    <footer class="custom-sky-footer text-white">
+        <div class="container-max">
+
+            <!-- Newsletter Box -->
+            <div class="newsletter-overlay-box mb-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <h4 class="newsletter-title mb-1">Stay Connected with Our Newsletter</h4>
+                        <p class="newsletter-subtitle mb-0">Subscribe to our newsletter to get more news, promo, or news
+                            services</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <form class="footer-inline-search" onsubmit="return false;">
+                            <input type="email" class="form-control-pill" placeholder="Enter email address" required>
+                            <button type="submit" class="btn-subscribe-pill">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="row g-5 pb-5 border-bottom border-white-20">
+                <div class="col-lg-5">
+                    <div class="footer-brand d-flex align-items-center mb-3">
+                        <i class="fa-solid fa-house-chimney-config text-white me-2 fs-4"></i>
+                        <span class="fs-4 fw-bold text-white">HomePro</span>
+                    </div>
+                    <p class="footer-brand-desc mb-4 max-w-600">Home Pro is your premier destination for top-notch smart
+                        home service and repair.</p>
+                    <div class="d-flex gap-3 footer-social-vectors">
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6 offset-lg-1">
+                    <h5 class="footer-column-heading mb-3">Company</h5>
+                    <ul class="list-unstyled custom-footer-links">
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blog">Our Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <h5 class="footer-column-heading mb-3">Legal</h5>
+                    <ul class="list-unstyled custom-footer-links">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center pt-4 footer-copyright-row">
+                <p class="mb-0 text-white">©2023 HomePro . All rights reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
