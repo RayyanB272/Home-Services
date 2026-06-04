@@ -1216,34 +1216,34 @@ body {
    17. FOOTER & NEWSLETTER SYSTEM
    ========================================================================== */
 .custom-sky-footer {
-    background-color: var(--primary-accent);
-    padding: 64px 0 32px 0;
+    background-color: var(--secondary); /* Vivid sky blue background from image_5beba0.png */
+    padding: 70px 0 35px 0;
     font-family: var(--font-stack);
 }
 
 .newsletter-overlay-box {
-    background-color: var(--primary);
-    border: 1px solid var(--primary-muted);
+    background-color: rgba(20, 34, 87, 0.12); /* Subtle dark overlay container for contrast */
+    border: none; /* Removed border for the clean look in image_5beba0.png */
     border-radius: 20px;
     padding: 36px 44px;
 }
 
 .newsletter-title {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     font-weight: 700;
-    color: var(--primary-foreground);
+    color: #ffffff;
     letter-spacing: -0.3px;
 }
 
 .newsletter-subtitle {
-    font-size: 0.9rem;
-    color: var(--primary-muted);
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.85); /* Soft white text */
 }
 
 .footer-inline-search {
     display: flex;
     align-items: center;
-    background-color: var(--background);
+    background-color: #ffffff;
     padding: 6px 6px 6px 20px;
     border-radius: 50px;
 }
@@ -1258,12 +1258,12 @@ body {
 }
 
 .form-control-pill::placeholder {
-    color: var(--muted);
+    color: #a5adc2;
 }
 
 .btn-subscribe-pill {
-    background-color: var(--secondary);
-    color: var(--secondary-foreground);
+    background-color: var(--secondary); /* Matches the vibrant blue background */
+    color: #ffffff;
     border: none;
     font-weight: 700;
     font-size: 0.95rem;
@@ -1273,7 +1273,8 @@ body {
 }
 
 .btn-subscribe-pill:hover {
-    background-color: var(--primary-accent);
+    background-color: var(--primary);
+    color: #ffffff;
 }
 
 .footer-brand span {
@@ -1282,25 +1283,25 @@ body {
 
 .footer-brand-desc {
     font-size: 0.92rem;
-    color: var(--primary-muted);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
 .footer-social-vectors a {
-    color: var(--primary-foreground);
+    color: #ffffff;
     font-size: 1.15rem;
     transition: var(--transition-smooth);
 }
 
 .footer-social-vectors a:hover {
-    opacity: 0.75;
+    opacity: 0.8;
     transform: translateY(-2px);
 }
 
 .footer-column-heading {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    color: var(--primary-foreground);
+    color: #ffffff;
 }
 
 .custom-footer-links li {
@@ -1308,24 +1309,27 @@ body {
 }
 
 .custom-footer-links a {
-    color: var(--primary-muted);
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     font-size: 0.95rem;
     transition: var(--transition-smooth);
 }
 
 .custom-footer-links a:hover {
-    color: var(--primary-foreground);
-    text-decoration: underline;
-}
-
-.border-white-20 {
-    border-color: var(--primary-accent) !important;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.85;
 }
 
 .footer-copyright-row p {
     font-size: 0.9rem;
-    color: var(--primary-muted) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+@media (max-width: 991px) {
+    .newsletter-overlay-box {
+        padding: 28px;
+    }
 }
 
 @media (max-width: 991px) {
